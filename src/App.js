@@ -8,7 +8,7 @@ const App = () => {
   // const [iconfound, setIconfound] = useState('null');
   const fetchAPI = async () => {
     try {
-      const api = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=8127638a3d43ae0a21df0d0eb929294c`;
+      const api = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=`;
       const data = await fetch(api);
       const con = await data.json();
       setCity(con.main);
